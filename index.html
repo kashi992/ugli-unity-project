@@ -133,7 +133,8 @@
       }
 
       /* ✅ CDN base */
-      const buildUrl = "/Build2";
+      const CDN = "https://d1qy305ek4jct4.cloudfront.net";
+      const buildUrl = CDN + "/Build2";
 
       /* ✅ Loader file from CDN */
       const loaderUrl = buildUrl + "/Compressed.loader.js";
@@ -144,7 +145,7 @@
         dataUrl: buildUrl + "/Compressed.data.br",
         frameworkUrl: buildUrl + "/Compressed.framework.js.br",
         codeUrl: buildUrl + "/Compressed.wasm.br",
-        streamingAssetsUrl: "/StreamingAssets2",
+        streamingAssetsUrl: CDN + "/StreamingAssets2",
         companyName: "DefaultCompany",
         productName: "LUCID EDGE_Visualisation",
         productVersion: "0.1.0",
