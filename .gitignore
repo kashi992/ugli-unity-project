@@ -2,3 +2,4 @@
 *.rar
 *.json
 server.js
+node_modules
