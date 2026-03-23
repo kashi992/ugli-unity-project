@@ -6,7 +6,7 @@
     <title>Unity Web Player | LUCID EDGE_Visualisation</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-       <style>
+          <style>
       #loading-container {
         position: absolute;
         display: flex;
@@ -125,12 +125,12 @@
 
 const CDN = "https://d1qy305ek4jct4.cloudfront.net";
       var buildUrl = CDN + "/Build2";
-    var loaderUrl = buildUrl + "/uglxgamudaCOMPRESSED.loader.js";
+      var loaderUrl = buildUrl + "/test.loader.js";
       var config = {
         arguments: [],
-       dataUrl: buildUrl + "/uglxgamudaCOMPRESSED.data.br",
-        frameworkUrl: buildUrl + "/uglxgamudaCOMPRESSED.framework.js.br",
-        codeUrl: buildUrl + "/uglxgamudaCOMPRESSED.wasm.br",
+        dataUrl: buildUrl + "/test.data.br",
+        frameworkUrl: buildUrl + "/test.framework.js.br",
+        codeUrl: buildUrl + "/test.wasm.br",
         streamingAssetsUrl: CDN + "/StreamingAssets2",
         companyName: "DefaultCompany",
         productName: "LUCID EDGE_Visualisation",
@@ -167,7 +167,7 @@ const CDN = "https://d1qy305ek4jct4.cloudfront.net";
         meta.name = 'viewport';
         meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
         document.getElementsByTagName('head')[0].appendChild(meta);
-           canvas.style.width = "100%";
+          canvas.style.width = "100%";
       canvas.style.height = "100%";
       canvas.style.position = "fixed";
       document.body.style.textAlign = "left";
@@ -181,13 +181,13 @@ const CDN = "https://d1qy305ek4jct4.cloudfront.net";
 
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-        canvas.style.width = "100%";
-        canvas.style.height = "100%";
+        canvas.style.width = "960px";
+        canvas.style.height = "600px";
       }
 
       // document.querySelector("#unity-loading-bar").style.display = "block";
 
-       function setProgress(p) {
+            function setProgress(p) {
       document.getElementById("loading-text").innerText = Math.round(p) + "%";
     }
 
@@ -213,6 +213,7 @@ const CDN = "https://d1qy305ek4jct4.cloudfront.net";
     };
 
       document.body.appendChild(script);
+
     </script>
   </body>
 </html>
